@@ -31,13 +31,15 @@ yarn init
 # Install development dependencies
 yarn install
 
-#Install Editor-SDK Integration of yarn2. The below exmaple uses vscode. ref: https://next.yarnpkg.com/advanced/editor-sdks#vscode
+# Install Editor-SDK Integration of yarn2. The below exmaple uses vscode. 
+# ref: https://next.yarnpkg.com/advanced/editor-sdks#vscode
 yarn dlx @yarnpkg/pnpify --sdk vscode
 
-#For safety reason VSCode requires you to explicitly activate the custom TS settings:
-#Press ctrl+shift+p in a TypeScript file
-#Choose "Select TypeScript Version"
-#Pick "Use Workspace Version"
+# Open the project in vs code. If alreadt opened, close and reopen the project. 
+# For safety reason VSCode requires you to explicitly activate the custom TS settings:
+# Press ctrl+shift+p in a TypeScript file
+# Choose "Select TypeScript Version"
+# Pick "Use Workspace Version"
 
 # start development server
 yarn run dev
