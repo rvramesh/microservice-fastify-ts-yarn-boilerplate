@@ -6,11 +6,8 @@
   "author": "Ramesh Vijayaraghavan",
   "license": "MIT",
   "scripts": {
-    "prebuild": "yarn run lint && rimraf ./build",
+    "prebuild": "rimraf ./build",
     "build": "tsc -p ./tsconfig.json",
-    "prettier": "prettier --loglevel warn --write \"src/**/*.{ts,tsx}\"",
-    "prelint": "yarn run prettier",
-    "lint": "tslint --fix -c tslint.json -t stylish -p ./tsconfig.json",
     "dev:clean": "rimraf build",
     "dev:build": "tsc --incremental -p tsconfig.json",
     "dev:start": "node --inspect -r source-map-support/register -r dotenv/config build/index.js",
@@ -41,5 +38,10 @@
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
     "typescript": "^3.9.5"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run build"
+    }
   }
 }
