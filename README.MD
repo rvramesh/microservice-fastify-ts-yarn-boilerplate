@@ -20,7 +20,13 @@ git clone https://github.com/rvramesh/microservice-fastify-ts-yarn-boilerplate.g
 cd {your_project_name}
 
 # Remove reference to the original starter
-rm -rf .git && yarn init
+rm -rf .git 
+
+# Initialize Yarn 2. Install yarn globally if required by using npm install -g yarn
+yarn set version berry
+
+# Initialize package.json
+yarn init
 
 # Install development dependencies
 yarn install

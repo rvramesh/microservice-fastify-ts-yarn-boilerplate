@@ -41,10 +41,5 @@
     "rimraf": "^3.0.2",
     "source-map-support": "^0.5.19",
     "typescript": "^3.9.5"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run build"
-    }
   }
 }
