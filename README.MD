@@ -50,7 +50,6 @@ yarn run dev
 Run this commands from the project folder with `yarn run "script-name"`.
 * `dev`: runs project in development mode
 * `build`: builds all .ts files from `./src` folder to `./build`
-* `lint`: lints source code using `eslint`
 * `prod`: runs project in production mode
 
 ## Debugging
